@@ -1,0 +1,130 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: baseline;
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  width: 49px;
+  height: 35px;
+}
+
+.logo__item {
+  width: 49px;
+  height: 35px;
+  display: block;
+}
+.logo__item--purple {
+  background: #9C69E2;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+}
+.logo__item--pink {
+  background: #F063B8;
+  border-radius: 20px;
+  width: 20px;
+  height: 35px;
+}
+
+.burger {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  justify-self: end;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.burger:before, .burger:after {
+  content: "";
+  background: #9C69E2;
+  width: 100%;
+  position: absolute;
+  height: 2px;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+.burger:before {
+  top: 0;
+}
+.burger:after {
+  bottom: 0;
+}
+.burger span {
+  background: #9C69E2;
+  width: 100%;
+  position: absolute;
+  height: 2px;
+  left: 0;
+  top: 9px;
+}
+
+.burger.active {
+  background: none;
+  right: 0;
+  left: auto;
+  transition: 0.3s ease-in-out;
+}
+.burger.active::before, .burger.active::after {
+  content: "";
+  background: #9C69E2;
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  right: 10px;
+  transition: 0.3s ease-in-out;
+}
+.burger.active::before {
+  transform: rotate(45deg);
+  top: 6px;
+}
+.burger.active::after {
+  transform: rotate(-45deg);
+  bottom: 12px;
+}
+.burger.active span {
+  transform: scale(0);
+}
+
+.menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__item {
+  color: #212353;
+}
+
+.menu__link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 75px;
+  color: #212353;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.menu__link:hover {
+  color: #9C69E2;
+  transition: 0.3s ease-in-out;
+}
+
+.menu {
+  position: fixed;
+  top: -100%;
+  transition: 0.3s ease-in-out;
+}
+
+.menu.active {
+  position: fixed;
+  top: 10%;
+  transition: 0.3s ease-in-out;
+}
+
+/*# sourceMappingURL=MenuList.css.map */
