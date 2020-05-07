@@ -10,6 +10,7 @@
   align-items: end;
   width: 49px;
   height: 35px;
+  padding: 25px 30px;
 }
 
 .logo__item {
@@ -38,6 +39,7 @@
   justify-self: end;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  margin-right: 30px;
 }
 .burger:before, .burger:after {
   content: "";
@@ -90,32 +92,8 @@
   transform: scale(0);
 }
 
-.menu__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu__item {
-  color: #212353;
-}
-
-.menu__link {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 27px;
-  line-height: 75px;
-  color: #212353;
-  text-decoration: none;
-  transition: 0.3s ease-in-out;
-}
-.menu__link:hover {
-  color: #9C69E2;
-  transition: 0.3s ease-in-out;
-}
-
 .menu {
+  width: 100%;
   position: fixed;
   top: -100%;
   transition: 0.3s ease-in-out;
@@ -123,8 +101,33 @@
 
 .menu.active {
   position: fixed;
-  top: 10%;
+  top: 11%;
   transition: 0.3s ease-in-out;
+}
+
+.menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #D6B9FF;
+}
+
+@media (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+
+  .menu {
+    position: inherit;
+    top: 0%;
+  }
+
+  .menu__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #D6B9FF;
+  }
 }
 
 /*# sourceMappingURL=MenuList.css.map */
