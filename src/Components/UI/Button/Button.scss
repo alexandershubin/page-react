@@ -1,0 +1,26 @@
+.button {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  color: #FFFFFF;
+  border-radius: 50px;
+  display: block;
+  cursor: pointer;
+  outline: none;
+
+  &--purple {
+    background: #9C69E2;
+    margin: 44px auto;
+    padding: 15px;
+    max-width: 180px;
+    width: 100%;
+    transition: 0.2s linear;
+
+    &:hover {
+      background: #B17FF4;
+      transition: 0.2s linear;
+    }
+  }
+}

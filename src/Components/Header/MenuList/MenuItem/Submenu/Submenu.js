@@ -4,14 +4,14 @@ import {NavLink} from "react-router-dom";
 
 const Submenu = props => {
   return (
-    <ul className='Submenu'>
+    <ul className='submenu'>
       {props.subLinks.map((link, index) => {
         return (
-          <li key={index}>
+          <li className='submenu__item' key={index}>
             <NavLink
               to={link.to}
               exact={link.exact}
-              className='Submenu__item'
+              className='submenu__link'
             >
               {link.label}
             </NavLink>
