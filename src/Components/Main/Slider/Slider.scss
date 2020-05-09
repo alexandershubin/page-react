@@ -1,0 +1,128 @@
+.slider--features {
+  background: #FFC84D;
+  margin-bottom: 73px;
+
+  .slick-dots {
+    bottom: 25px;
+  }
+
+  .slick-dots li button:before {
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: #F063B8;
+    opacity: 1;
+    font-size: 10px;
+    top: 1px;
+  }
+
+  .slick-dots li {
+    margin: 0;
+  }
+}
+
+.slider__content {
+  background: #FFF3D7;
+  box-shadow: 0px 10px 0px #F5BD3F;
+  border-radius: 50px;
+  margin: 38px auto 99px;
+  padding: 0 30px;
+  min-height: 358px;
+  position: relative;
+  display: grid;
+  align-items: center;
+  grid-template-rows: 1fr auto 1fr;
+  max-width: 280px;
+  box-sizing: border-box;
+
+  &--new:before {
+    content: 'New';
+    position: absolute;
+    top: 0;
+    left: 30px;
+    background: #F063B8;
+    box-shadow: 0px 4px 0px #EFE3C5;
+    border-radius: 0px 0px 4px 4px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 0 10px;
+  }
+}
+
+.slider__title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 32px;
+  color: #212353;
+  margin: 0;
+}
+
+.slider__description {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #4B5D68;
+  margin: 0;
+}
+
+@media(min-width: 768px) {
+  .slider--features {
+    border-radius: 50px;
+    max-width: 682px;
+    margin: auto;
+    counter-reset: slider -1;
+
+
+    .slider__content {
+      margin: 97px auto 130px;
+      max-width: 390px;
+      padding: 30px 60px 30px 114px;
+      position: relative;
+
+      &:after {
+        content: counter(slider);
+        counter-increment: slider;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: -66px;
+        top: -3%;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 202px;
+        color: #9C69E2;
+      }
+
+      &--new:before {
+        left: 114px;
+      }
+    }
+
+    .slick-dots {
+      text-align: left;
+      padding-left: 40px;
+      bottom: 50px;
+    }
+  }
+}
+
+@media(min-width: 1200px) {
+  .slider--features {
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding: 0 50px;
+    counter-reset: slider -2;
+  }
+}

@@ -44,7 +44,7 @@ export default class MenuList extends Component {
     
     return (
       <>
-        <header className='header'>
+        <header className='header header--padding-top'>
           <NavLink to={'/'}>
             <div className='logo'>
               <span className='logo__item logo__item--purple'></span>
@@ -66,11 +66,11 @@ export default class MenuList extends Component {
                 showSubMenu={!this.state.showSubMenu}
                 clickHandlerSubMenu={this.clickHandlerSubMenu}
               />
-              <Button
-                className='button--purple'
-                text={'Sign Up'}
-              />
             </ul>
+            <Button
+              className='button--purple'
+              text={'Sign Up'}
+            />
           </nav>
         </header>
       </>
