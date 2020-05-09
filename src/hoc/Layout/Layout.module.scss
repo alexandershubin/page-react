@@ -1,5 +1,6 @@
-.Layout {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+@media(min-width: 768px) {
+  .Layout {
+    display: grid;
+    grid-template-columns: repeat(32, 1fr);
+  }
 }
