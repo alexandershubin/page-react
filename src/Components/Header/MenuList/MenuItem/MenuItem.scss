@@ -16,7 +16,7 @@
   line-height: 75px;
   color: #212353;
   text-decoration: none;
-  padding-left: 30px;
+  padding-left: 20px;
   transition: 0.2s ease-in-out;
 }
 
@@ -81,6 +81,7 @@
     &:after {
       width: 6px;
       top: 15px;
+      right: 16px;
     }
 
     &:before {

@@ -1,36 +1,12 @@
 .header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: baseline;
+
 }
 
-.logo {
+.header__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: end;
-  width: 49px;
-  height: 35px;
-  padding: 25px 20px;
-}
-
-.logo__item {
-  width: 49px;
-  height: 35px;
-  display: block;
-
-  &--purple {
-    background: #9C69E2;
-    border-radius: 20px;
-    width: 20px;
-    height: 20px;
-  }
-
-  &--pink {
-    background: #F063B8;
-    border-radius: 20px;
-    width: 20px;
-    height: 35px;
-  }
+  align-items: center;
+  padding: 20px;
 }
 
 .burger {
@@ -41,7 +17,6 @@
   justify-self: end;
   transition: 0.3s ease-in-out;
   cursor: pointer;
-  margin-right: 20px;
   z-index: 10;
 
   &:before,
@@ -114,7 +89,7 @@
 
 .menu.active {
   position: absolute;
-  top: 11%;
+  top: 10%;
   transition: 0.7s ease-in-out;
   z-index: 4;
   background: #ffffff;
@@ -129,17 +104,17 @@
 
 @media(min-width: 768px) {
   .header {
-    grid-column: 2/32;
-    grid-template-columns: 1fr 14fr;
-    align-items: center;
-
     &--padding-top {
+      display: grid;
+      grid-column: 2/32;
+      grid-template-columns: 1fr 14fr;
+      align-items: center;
       padding-top: 15px;
     }
   }
 
-  .logo {
-    padding: 25px 0;
+  .header__content {
+    padding: 20px 0;
   }
 
   .burger {

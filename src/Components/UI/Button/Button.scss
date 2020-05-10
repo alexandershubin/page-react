@@ -27,6 +27,21 @@
     }
   }
 
+  &--orange {
+    background: #EEAA12;
+    margin: 22px auto 0;
+    padding: 9.5px;
+    max-width: 148px;
+    color: #FFFFFF;
+    width: 100%;
+    transition: 0.2s linear;
+
+    &:hover {
+      background: #FFBE2D;
+      transition: 0.2s linear;
+    }
+  }
+
   &--arrow {
     position: relative;
     font-family: 'Roboto', sans-serif;
@@ -55,6 +70,11 @@
   .button {
     &--purple {
       margin: 0 0 0 auto;
+    }
+
+    &--orange {
+      margin: 0;
+      min-width: 148px;
     }
   }
 }
