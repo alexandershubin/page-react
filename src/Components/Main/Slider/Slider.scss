@@ -80,7 +80,7 @@
   .slider--features {
     border-radius: 50px;
     max-width: 682px;
-    margin: auto;
+    margin: 0 auto 92px;
     counter-reset: slider -1;
 
 
@@ -124,5 +124,6 @@
     box-sizing: border-box;
     padding: 0 50px;
     counter-reset: slider -2;
+    margin: 0 auto 151px;
   }
 }

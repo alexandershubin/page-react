@@ -11,6 +11,7 @@ const Button = props => {
     <div>
       <button
       className={cls.join(' ')}
+      type={props.type}
       >{props.text}</button>
     </div>
   )
